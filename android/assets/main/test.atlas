@@ -1,0 +1,117 @@
+
+test.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+game_bg
+  rotate: false
+  xy: 1, 523
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+start_bg
+  rotate: false
+  xy: 1, 41
+  size: 800, 480
+  orig: 800, 480
+  offset: 0, 0
+  index: -1
+darkclouds
+  rotate: false
+  xy: 803, 932
+  size: 808, 71
+  orig: 808, 71
+  offset: 0, 0
+  index: -1
+grass
+  rotate: false
+  xy: 803, 859
+  size: 808, 71
+  orig: 808, 71
+  offset: 0, 0
+  index: -1
+gameover
+  rotate: false
+  xy: 1613, 925
+  size: 412, 78
+  orig: 412, 78
+  offset: 0, 0
+  index: -1
+hill
+  rotate: false
+  xy: 803, 618
+  size: 108, 239
+  orig: 108, 239
+  offset: 0, 0
+  index: -1
+lightning
+  rotate: false
+  xy: 803, 377
+  size: 108, 239
+  orig: 108, 239
+  offset: 0, 0
+  index: -1
+btn
+  rotate: false
+  xy: 913, 738
+  size: 114, 119
+  orig: 114, 119
+  offset: 0, 0
+  index: -1
+start_btn
+  rotate: false
+  xy: 913, 629
+  size: 109, 107
+  orig: 109, 107
+  offset: 0, 0
+  index: -1
+balloon1
+  rotate: false
+  xy: 803, 302
+  size: 88, 73
+  orig: 88, 73
+  offset: 0, 0
+  index: -1
+balloon2
+  rotate: false
+  xy: 1029, 784
+  size: 88, 73
+  orig: 88, 73
+  offset: 0, 0
+  index: -1
+balloon3
+  rotate: false
+  xy: 913, 554
+  size: 88, 73
+  orig: 88, 73
+  offset: 0, 0
+  index: -1
+tap
+  rotate: false
+  xy: 1613, 864
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+touch
+  rotate: false
+  xy: 803, 241
+  size: 59, 59
+  orig: 59, 59
+  offset: 0, 0
+  index: -1
+heart
+  rotate: false
+  xy: 1, 1
+  size: 39, 38
+  orig: 39, 38
+  offset: 0, 0
+  index: -1
+bottle
+  rotate: false
+  xy: 2027, 973
+  size: 19, 30
+  orig: 19, 30
+  offset: 0, 0
+  index: -1
