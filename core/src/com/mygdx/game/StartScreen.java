@@ -5,8 +5,6 @@ import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -15,12 +13,13 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
+import com.mygdx.game.Util.FlyBallGame;
 
 
 public class StartScreen extends ScreenAdapter {
 
 
-    BalloonGame game;
+    FlyBallGame game;
 
 //    private SpriteBatch batch = new SpriteBatch();
 //    private BitmapFont font = new BitmapFont();
@@ -35,18 +34,18 @@ public class StartScreen extends ScreenAdapter {
     private TextureAtlas atlas;
 
 
-    public StartScreen(BalloonGame balloonGame) {
-        game = balloonGame;
+    public StartScreen(FlyBallGame flyBallGame) {
+        game = flyBallGame;
 
         atlas = game.assetManager.get("main/test.atlas",TextureAtlas.class);
         texture = atlas.findRegion("start_bg");
         start_button = new Image(atlas.findRegion("start_btn"));
 
-        music = game.assetManager.get("audio/start_bg.mp3",Music.class);
+        music = game.assetManager.get("gameaudio/start_bg.mp3",Music.class);
         music.setLooping(true);
         music.play();
 
-        sound = game.assetManager.get("audio/click.mp3",Sound.class);
+        sound = game.assetManager.get("gameaudio/click.mp3",Sound.class);
 
         bg = new Image(texture);
 
@@ -65,7 +64,7 @@ public class StartScreen extends ScreenAdapter {
 
 
                 sound.play();
-                game.setScreen(new LoadScreen(game));
+                game.setScreen(new LoadGameScreen(game));
 
                 return true;
             }
